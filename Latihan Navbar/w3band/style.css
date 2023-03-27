@@ -1,0 +1,38 @@
+.home img {
+  width: 100%;
+}
+
+.navigasi {
+  display: flex;
+  background-color: black;
+
+  flex-direction: row;
+  gap: 20px;
+}
+.navigasi a {
+  color: white;
+  text-decoration: none;
+
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 20px;
+}
+
+.navigasi a:hover {
+  background-color: antiquewhite;
+  color: black;
+}
+
+.member {
+  display: flex;
+  justify-content: center;
+}
+
+.band {
+  display: flex;
+  justify-content: space-evenly;
+}
+.band img {
+  flex-direction: row;
+  justify-content: space-around;
+}

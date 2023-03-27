@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <!-- <h1>For,</h1>
+    <form action="" method="post">
+      nama <input type="text" /><br />
+      Email <input type="text" />
+    </form> -->
+    <fieldset>
+        <legend>Register</legend>
+   
+    <table>
+      <tr>
+        <th>Nama</th>
+        <td><input type="text" id="txtNama" /></td>
+      </tr>
+      <tr>
+        <th>Email</th>
+        <td><input type="text"  /></td>
+      </tr>
+      <tr>
+        <th>Password</th>
+        <td><input type="password" name="input" id="txtPasword" /></td>
+      </tr>
+      <tr>
+        <th></th>
+        <td>
+          Front End <input type="checkbox" name="cb" id="cbFE" />Back End
+          <input type="checkbox" name="cb" id="cbBE" />
+        </td>
+      </tr>
+
+      <tr>
+        <th>Gender</th>
+        <td>
+          Pria<input type="radio" name="radio" id="rFE" />Wanita
+          <input type="radio" name="radio" id="rdBE" />
+        </td>
+      </tr>
+
+      <!-- number -->
+
+      <tr>
+        <th>Umur</th>
+        <td><input type="number" name="input" id="txtUmur" /></td>
+      </tr>
+
+      <tr>
+        <th>Alamat</th>
+        <td>
+          <textarea name="input" id="taAlamat" cols="20" rows="5"></textarea>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="2">
+          <center>
+            <!-- <input type="submit" value="Submit" /> -->
+            <input type="button" value="ok" onclick="ok()" />
+          </center>
+        </td>
+      </tr>
+    </table>
+  </body>
+   </fieldset>
+
+  <tr>
+    <th>Agama</th>
+    <td></td>
+  </tr>
+
+
+
+  <script>
+    function ok() {
+      let nama = document.getElementById("txtNama").value;
+      alert(nama);
+    }
+  </script>
+</html>

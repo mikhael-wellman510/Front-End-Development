@@ -1,0 +1,81 @@
+@media screen and (min-width: 480px) {
+  body {
+    background-color: lightgreen;
+  }
+}
+
+body {
+  color: white;
+  text-align: center;
+}
+
+#content {
+  max-width: 960px;
+  margin: 0;
+}
+#content div {
+  background: lightskyblue;
+  padding: 30px;
+}
+#content div:nth-child(even) {
+  background: grey;
+}
+
+/* Grid Template Columns */
+#content {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Grid Template Rows */
+
+#content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 100px 100px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+*/
+
+/* grid auto rows */
+#content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 150px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* /* grid gap  */
+#content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 2fr 3fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 10px;
+  max-width: 960px;
+  margin: 0px auto;
+}
+*/
+
+/* GRID COLUMN */
+#content {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 10px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.kotak {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.kotak {
+  grid-column: 4/10;
+}
